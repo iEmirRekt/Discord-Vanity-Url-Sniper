@@ -52,6 +52,7 @@ class Sniper {
 }
 
 setInterval(async () => {
-    await Sniper.start()
+    const sniper = new Sniper();
+    await sniper.start();
 }, 5000);
 
